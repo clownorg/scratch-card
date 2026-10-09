@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    background: #fdf7f2;
+
+    color: #4d4542;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+.app {
+    width: 100%;
+    max-width: 500px;
+}
+
+.sparkle {
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+
+    margin: 0;
+
+    font-size: 32px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #817773;
+
+    line-height: 1.5;
+
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CHALLENGE CARDS
+   ========================= */
+
+.challenge {
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(80, 60, 50, 0.07);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.challenge:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(80, 60, 50, 0.12);
+}
+
+.challenge-icon {
+    font-size: 35px;
+}
+
+.challenge-info {
+    flex: 1;
+}
+
+.challenge-info h2 {
+    margin: 0 0 5px;
+
+    font-size: 18px;
+}
+
+.challenge-info p {
+    margin: 0 0 8px;
+
+    color: #8b7c76;
+
+    font-size: 14px;
+}
+
+.arrow {
+    font-size: 30px;
+
+    color: #b49d96;
+}
+
+
+/* =========================
+   SMALL PROGRESS BARS
+   ========================= */
+
+.mini-progress {
+    height: 8px;
+
+    background: #eee7e2;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.mini-progress div {
+    height: 100%;
+
+    width: 0%;
+
+    background: #d9a6a0;
+
+    border-radius: 20px;
+
+    transition: width 0.4s ease;
+}
+
+
+/* =========================
+   DETAIL SCREEN
+   ========================= */
+
+.hidden {
+    display: none;
+}
+
+.back-button {
+    border: none;
+
+    background: transparent;
+
+    color: #817773;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    padding: 5px 0;
+
+    margin-bottom: 20px;
+}
+
+.challenge-detail {
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(80, 60, 50, 0.08);
+}
+
+.detail-icon {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+.challenge-detail h1 {
+    font-size: 28px;
+}
+
+.big-progress {
+    margin: 30px 0;
+}
+
+#detail-progress {
+    font-size: 35px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 14px;
+
+    background: #eee7e2;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+#detail-bar {
+    height: 100%;
+
+    width: 0%;
+
+    background: #d9a6a0;
+
+    border-radius: 20px;
+
+    transition: width 0.4s ease;
+}
+
+#detail-status {
+    color: #817773;
+
+    min-height: 24px;
+}
+
+.main-button {
+    border: none;
+
+    background: #d9a6a0;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 50px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+.main-button:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
+   REWARD
+   ========================= */
+
+.detail-reward {
+    background: #f3e9e5;
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    margin: 20px 0;
+
+    font-size: 17px;
+
+    color: #6f5e58;
+
+    min-height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
