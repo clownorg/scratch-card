@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Rewards ✨</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <div id="home-screen">
+
+            <div class="sparkle">✦</div>
+
+            <h1>My Rewards</h1>
+
+            <p class="subtitle">
+                Little steps, lovely rewards. ♡
+            </p>
+
+
+            <!-- CLEAN ROOM -->
+
+            <div class="challenge"
+                 onclick="openChallenge('room')">
+
+                <div class="challenge-icon">🧹</div>
+
+                <div class="challenge-info">
+
+                    <h2>Clean my room</h2>
+
+                    <p>
+                        <span id="room-progress">0 / 7</span> days
+                    </p>
+
+                    <div class="mini-progress">
+                        <div id="room-bar"></div>
+                    </div>
+
+                </div>
+
+                <div class="arrow">›</div>
+
+            </div>
+
+
+            <!-- RETURN ITEMS -->
+
+            <div class="challenge"
+                 onclick="openChallenge('returns')">
+
+                <div class="challenge-icon">📦</div>
+
+                <div class="challenge-info">
+
+                    <h2>Return 3 items</h2>
+
+                    <p>
+                        <span id="returns-progress">0 / 3</span> items
+                    </p>
+
+                    <div class="mini-progress">
+                        <div id="returns-bar"></div>
+                    </div>
+
+                </div>
+
+                <div class="arrow">›</div>
+
+            </div>
+
+
+            <!-- THEORY TEST -->
+
+            <div class="challenge"
+                 onclick="openChallenge('theory')">
+
+                <div class="challenge-icon">🚗</div>
+
+                <div class="challenge-info">
+
+                    <h2>Theory test practice</h2>
+
+                    <p>
+                        <span id="theory-progress">0 / 10</span> days
+                    </p>
+
+                    <div class="mini-progress">
+                        <div id="theory-bar"></div>
+                    </div>
+
+                </div>
+
+                <div class="arrow">›</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- INDIVIDUAL CHALLENGE SCREEN -->
+
+        <div id="challenge-screen" class="hidden">
+
+            <button class="back-button"
+                    onclick="goHome()">
+                ← Back
+            </button>
+
+            <div class="challenge-detail">
+
+                <div id="detail-icon"
+                     class="detail-icon">
+                </div>
+
+                <h1 id="detail-title"></h1>
+
+                <p id="detail-description"
+                   class="subtitle">
+                </p>
+
+
+                <div class="big-progress">
+
+                    <div id="detail-progress">
+                        0 / 0
+                    </div>
+
+                    <div class="progress">
+                        <div id="detail-bar"></div>
+                    </div>
+
+                </div>
+
+
+                <p id="detail-status"></p>
+
+                <div id="detail-reward" class="detail-reward"></div>
+
+
+                <button id="action-button"
+                        class="main-button"
+                        onclick="completeCurrentChallenge()">
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
